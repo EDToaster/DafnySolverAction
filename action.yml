@@ -2,7 +2,7 @@ name: 'Dafny Solver'
 description: 'Verifies Dafny files'
 inputs:
     files:
-        description: 'File paths to verify'
+        description: 'Space separated list of files to verify'
         required: true
 
 runs:

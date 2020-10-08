@@ -1,4 +1,8 @@
 #!/bin/sh -l
 
 FILES=$1
-echo "$FILES"
+
+for file in $FILES
+do
+    echo "$file"
+done
