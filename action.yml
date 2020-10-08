@@ -1,0 +1,12 @@
+name: 'Dafny Solver'
+description: 'Verifies Dafny files'
+inputs:
+    files:
+        description: 'File paths to verify'
+        required: true
+
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
+    args:
+        - ${{ inputs.files }}
